@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-install_requires = ["numpy >= 1.16", "opencv-python", "pyudev"]
+install_requires = ["numpy >= 1.16", "opencv-python-headless", "pyudev"]
 
 dependency_links = []
 

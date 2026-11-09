@@ -1,3 +1,9 @@
+> **roboloom fork.** This branch differs from upstream 0.2.1 only in packaging: it depends on
+> `opencv-python-headless` instead of `opencv-python`, so it shares one `cv2` with LeRobot and
+> roboloom (both distributions install `cv2/`; having both installed mixes their files).
+> The code is unchanged; `Digit.show_view` (`cv2.imshow`) needs a GUI OpenCV and does not work
+> with headless. Wheels: see the `roboloom-*` releases. License unchanged (see LICENSE).
+
 # DIGIT-INTERFACE
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
